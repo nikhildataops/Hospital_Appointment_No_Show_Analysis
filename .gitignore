@@ -1,0 +1,5 @@
+appointments_public.csv
+appointments_public.csv.gz.b64
+__pycache__/
+.streamlit/secrets.toml
+.env

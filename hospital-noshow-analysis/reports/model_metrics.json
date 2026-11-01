@@ -1,0 +1,120 @@
+{
+  "best_model": "XGBoost (tuned)",
+  "test_results": {
+    "Dummy (always attends)": {
+      "ROC-AUC": 0.5,
+      "PR-AUC": 0.202,
+      "Recall": 0.0,
+      "Precision": 0.0,
+      "F1": 0.0,
+      "Accuracy": 0.798
+    },
+    "Logistic Regression": {
+      "ROC-AUC": 0.721,
+      "PR-AUC": 0.345,
+      "Recall": 0.865,
+      "Precision": 0.299,
+      "F1": 0.444,
+      "Accuracy": 0.563
+    },
+    "Random Forest": {
+      "ROC-AUC": 0.735,
+      "PR-AUC": 0.373,
+      "Recall": 0.791,
+      "Precision": 0.317,
+      "F1": 0.452,
+      "Accuracy": 0.613
+    },
+    "XGBoost": {
+      "ROC-AUC": 0.735,
+      "PR-AUC": 0.372,
+      "Recall": 0.821,
+      "Precision": 0.31,
+      "F1": 0.45,
+      "Accuracy": 0.594
+    },
+    "XGBoost (tuned)": {
+      "ROC-AUC": 0.736,
+      "PR-AUC": 0.38,
+      "Recall": 0.804,
+      "Precision": 0.313,
+      "F1": 0.451,
+      "Accuracy": 0.604
+    }
+  },
+  "cv_results": {
+    "Dummy (always attends)": {
+      "ROC-AUC (cv mean)": 0.5,
+      "ROC-AUC (cv std)": 0.0,
+      "PR-AUC (cv mean)": 0.2019
+    },
+    "Logistic Regression": {
+      "ROC-AUC (cv mean)": 0.7248,
+      "ROC-AUC (cv std)": 0.0029,
+      "PR-AUC (cv mean)": 0.3472
+    },
+    "Random Forest": {
+      "ROC-AUC (cv mean)": 0.742,
+      "ROC-AUC (cv std)": 0.0038,
+      "PR-AUC (cv mean)": 0.3791
+    },
+    "XGBoost": {
+      "ROC-AUC (cv mean)": 0.7427,
+      "ROC-AUC (cv std)": 0.0037,
+      "PR-AUC (cv mean)": 0.3808
+    }
+  },
+  "calibrated": {
+    "ROC-AUC": 0.7367188549984971,
+    "PR-AUC": 0.37902100660133936
+  },
+  "grouped_cv_auc": 0.7396033318391257,
+  "time_split_auc": 0.7308406333021202,
+  "threshold_table": {
+    "Default 0.50": {
+      "threshold": 0.5,
+      "flagged_%": 51.875,
+      "recall": 0.804,
+      "precision": 0.313,
+      "f1": 0.451
+    },
+    "Best F1": {
+      "threshold": 0.515,
+      "flagged_%": 49.265,
+      "recall": 0.778,
+      "precision": 0.319,
+      "f1": 0.452
+    },
+    "Recall >= 60%": {
+      "threshold": 0.588,
+      "flagged_%": 35.146,
+      "recall": 0.6,
+      "precision": 0.345,
+      "f1": 0.438
+    }
+  },
+  "top20_capture": 0.3844947344835313,
+  "top_decile_lift": 2.1550133349304645,
+  "n_train": 88416,
+  "n_test": 22105,
+  "base_rate": 0.2018982817745044,
+  "best_params": {
+    "subsample": 0.7,
+    "reg_lambda": 1,
+    "n_estimators": 500,
+    "min_child_weight": 1,
+    "max_depth": 6,
+    "learning_rate": 0.02,
+    "colsample_bytree": 0.8
+  },
+  "top_features": {
+    "wait_days": 0.7541000247001648,
+    "age": 0.24729999899864197,
+    "same_day": 0.19130000472068787,
+    "neighbourhood risk": 0.09009999781847,
+    "sms_received": 0.07599999755620956,
+    "scheduled_hour": 0.0706000030040741,
+    "prior_noshows": 0.06639999896287918,
+    "prior_appts": 0.06040000170469284
+  }
+}
